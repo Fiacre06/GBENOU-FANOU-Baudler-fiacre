@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biographie - Baudler-Fiacre GBENOU-FANOU</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .gallery-img {
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      font-size: 0.9em;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+  <!-- Photo de profil + titre -->
+  <div class="text-center mb-4">
+    <img src="portrait.jpg" alt="Portrait de Baudler-Fiacre" class="profile-img mb-3">
+    <h1 class="fw-bold">Baudler-Fiacre GBENOU-FANOU</h1>
+    <h5 class="text-muted">Horticulteur · Artiste · Journaliste agricole · Développeur web</h5>
+  </div>
+
+  <!-- Boutons de langue -->
+  <div class="text-center mb-4">
+    <div class="btn-group">
+      <button class="btn btn-primary" onclick="showFrench()">Français</button>
+      <button class="btn btn-outline-primary" onclick="showEnglish()">English</button>
+    </div>
+  </div>
+
+  <!-- Biographie FR -->
+  <div id="bio-fr">
+    <h3>Biographie</h3>
+    <p> Baudler-Fiacre GBENOU-FANOU,né le 10 mai 2006, est un jeune professionnel béninois aux multiples talents, passionné par l’horticulture, les arts, la communication et les technologies. Étudiant en deuxième année à l’École d’Horticulture et d’Aménagement des Espaces Verts (EHEAV) à l'Université Nationale d'Agriculture (UNA), il se spécialise dans la production horticole vivrière et l’aménagement paysager adapté aux réalités tropicales.</p>
+    <p>En plus de son parcours en horticulture, Baudler-Fiacre est artiste plasticien, explorant les formes, les couleurs et les textures à travers des œuvres inspirées de la nature et de la vie quotidienne. Son sens artistique enrichit sa vision de l’aménagement des espaces verts, qu’il considère comme des œuvres vivantes.</p>
+    <p>Il est également agro-journaliste, engagé dans la vulgarisation des pratiques agricoles durables, la mise en valeur des innovations paysannes et la sensibilisation à l’agroécologie.</p>
+    <p>Passionné par le numérique, Baudler-Fiacre est aussi développeur web autodidacte. Il conçoit des applications innovantes comme <strong>JardinExpress</strong>, un planificateur de jardin potager tropical adapté au climat et à la saison.</p>
+    <p>Curieux, créatif et engagé, il incarne la convergence entre nature, art, communication et technologie pour construire un avenir durable.</p>
+  </div>
+
+  <!-- Biographie EN -->
+  <div id="bio-en" style="display:none;">
+    <h3>Biography</h3>
+    <p>Baudler-Fiacre GBENOU-FANOU, born on may 10, 2006, is a multi-talented young professional from Benin, passionate about horticulture, the arts, communication, and technology. He is currently a second-year student at the School of Horticulture and Landscaping (EHEAV) at the National University of Agriculture (UNA), specializing in food crop production and sustainable landscaping adapted to tropical realities.</p>
+    <p>Besides horticulture, he is a visual artist exploring shapes, colors, and textures through works inspired by nature and daily life. His artistic sense enriches his vision of landscape design as living art.</p>
+    <p>He is also an agro-journalist, dedicated to promoting sustainable farming practices, local innovations, and agroecology through educational content.</p>
+    <p>As a self-taught web developer, Baudler-Fiacre creates innovative tools like <strong>JardinExpress</strong>, a tropical garden planner adapted to climate and season.</p>
+    <p>Curious, creative, and committed, he bridges nature, art, communication, and technology for a better world.</p>
+  </div>
+
+  <!-- Image de projet -->
+  <div class="my-5 text-center">
+    <img src="jardinexpress.jpg" alt="Aperçu de l'application JardinExpress" class="img-fluid gallery-img">
+    <p class="text-muted fst-italic mt-2">Aperçu de l'application JardinExpress</p>
+  </div>
+
+  <!-- Galerie avec deux autres images -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-6">
+      <img src="galerie1.jpg" alt="Activité horticole" class="gallery-img">
+      <p class="text-center mt-2 fst-italic text-muted">Travail d’aménagement paysager</p>
+    </div>
+    <div class="col-md-6">
+      <img src="galerie2.jpg" alt="Activité agricole" class="gallery-img">
+      <p class="text-center mt-2 fst-italic text-muted">Sensibilisation agricole sur le terrain</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-4">
+    &copy; 2025 Baudler-Fiacre GBENOU-FANOU · Contact : ton.email@example.com
+  </footer>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Changement de langue -->
+<script>
+  function showFrench() {
+    document.getElementById('bio-fr').style.display = 'block';
+    document.getElementById('bio-en').style.display = 'none';
+  }
+  function showEnglish() {
+    document.getElementById('bio-fr').style.display = 'none';
+    document.getElementById('bio-en').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
